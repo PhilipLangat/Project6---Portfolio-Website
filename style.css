@@ -89,7 +89,7 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 .header-text h1{
-   font-size: 40px; 
+   font-size: 25px; 
    margin-top: 20px;
 }
 
@@ -101,7 +101,6 @@ nav ul li a:hover::after{
     /*I have changed the padding from 80 to 20*/
     padding: 20px 0;
     color: #ababab;
-
 }
 .row{
     width: 100%;
@@ -118,9 +117,6 @@ nav ul li a:hover::after{
 .about-col-1{
     
     flex-basis: 35%;
-
-
-
 }
 .about-col-1 img{
     width: 100%;
@@ -129,13 +125,18 @@ nav ul li a:hover::after{
 .about-col-2{
    /* flex-basis: 60%;*/
     flex-basis: 50%;
+    
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: #fff;
     content: '';
 
+}
+.philo{
+    font-size: 20px;
+    
 }
 .tab-titles{
     display: flex;
@@ -453,6 +454,7 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
+    
     .tab-links{
         font-size: 16px;
         margin-right: 20px;

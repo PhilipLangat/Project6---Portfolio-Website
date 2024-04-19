@@ -1,21 +1,21 @@
 
 function opentab(tabName) {
-    // Get all elements with the class "tab-contents"
+    
     var tabcontent = document.getElementsByClassName("tab-contents");
-    // Get all elements with the class "tab-links"
+    
     var tablinks = document.getElementsByClassName("tab-links");
   
-    // Loop through all tab content elements and hide them
+    
     for (var i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Loop through all tab links and remove the "active-link" class
+   
     for (var i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove("active-link");
     }
   
-    // Show the clicked tab content and add "active-link" class to the clicked tab link
+    
     document.getElementById(tabName).style.display = "block";
     event.target.classList.add("active-link");
   }
