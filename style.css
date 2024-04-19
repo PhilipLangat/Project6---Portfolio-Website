@@ -19,9 +19,10 @@ body{
     width: 100%;
     /* height: 100vh; */
     /*check on the position of the background image*/
-    background-image: url();
+    /*background-image: url();*/
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .container{
     padding: 10px 10%;
@@ -43,6 +44,20 @@ nav ul li{
     margin: 10px 20px;
 
 }
+.container{
+    @media (min-width: 768px) {
+        .fa-solid.fa-bars { /* Target the hamburger menu icon */
+          display: none;
+        }
+      }
+}
+.nav i{
+    @media (min-width: 768px) {
+        .fa-solid.fa-bars { /* Target the hamburger menu icon */
+          display: none;
+        }
+      }
+}
 
 nav ul li a {
   color:#fff;
@@ -63,13 +78,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
 .header-text{
     /*Changed it from 20%*/
   margin-top: 5%; 
   margin-bottom: 5%;
   font-size: 30px; 
 }
-
+.header-text p{
+    color: #ff004f;
+}
 .header-text h1{
    font-size: 40px; 
    margin-top: 20px;
@@ -88,13 +106,13 @@ nav ul li a:hover::after{
 .row{
     width: 100%;
     display: flex;
-    justify-content: space-evenly; 
-    /* flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*flex-wrap: wrap;
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10rem;
-    max-width: 2vh ; */
+    max-width: 2vh ;*/
     
 }
 .about-col-1{
@@ -105,13 +123,12 @@ nav ul li a:hover::after{
 
 }
 .about-col-1 img{
-   width: 100%;
-
-   border-radius: 15px; 
-
+    width: 100%;
+    border-radius: 15px; 
 }
 .about-col-2{
-    flex-basis: 40%;
+   /* flex-basis: 60%;*/
+    flex-basis: 50%;
 }
 .sub-title{
     font-size: 60px;
@@ -142,7 +159,7 @@ nav ul li a:hover::after{
     transition: 0.5s
 }
 .tab-links.active-link::after{
-    width: 50% ;
+    width: 100% ;
 }
 .tab-contents ul li{
     list-style: none;
@@ -177,7 +194,8 @@ nav ul li a:hover::after{
     font-size: 16px;
     font-weight: 300;
     /*added the solid color*/
-    border-right: 10px solid #ff004f;
+    border-radius:10px ;
+    border-bottom: 10px solid #ff004f;
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
@@ -254,7 +272,9 @@ nav ul li a:hover::after{
     line-height: 60px;
     background:#fff ;
     width: 60px;
-    height: 60px;   
+    height: 60px;
+    border-radius: 50%;  
+    text-align: center;
 }
 .work:hover img{
     transform: scale(1.1); 
@@ -283,11 +303,11 @@ nav ul li a:hover::after{
    padding: 7px 40px;
    border-radius:6px ;
    text-decoration: none;
-   color:#fff ;
+   color:#ababab ;
    transition: background 0.5s ;
 
-       display: inline-block;
-    background:#ff004f ;
+    display: inline-block;
+    background:rgb(104, 100, 93) ;
 
     height: 7rem;
 
@@ -298,6 +318,9 @@ nav ul li a:hover::after{
     font-weight: 600;
 }
 .btn:hover{
+    background: #ff004f;
+}
+.submitBtn:hover{
     background: #ff004f;
 }
 /*<----------------------contact----------->*/
@@ -312,7 +335,6 @@ nav ul li a:hover::after{
 }
 .contact-left p i{
     color: #ff004f ;
-    /*reduce margin from 15 to 5 and size from 25 to 20*/
     margin-right: 15px;
     font-size: 25px;
 }
@@ -367,8 +389,19 @@ form.btn2{
 .copyright i{
     color: #ff004f;
 }
+
+nav .fas{
+    display: none;
+
+}
+.fa-solid fa-xmark{
+    display: none;
+}
+.fa-solid fa-bars{
+    display: none;
+}
 /*------------------------css for small screens--------*/
-nav.fas{
+nav .fas{
     display: none;
 
 }
@@ -379,7 +412,7 @@ nav.fas{
     .header-text{
         margin-top: 100%s;
         font-size: 16px;
-    }
+    } 
     .header-text h1{
         font-size:30px ;
     }
@@ -402,7 +435,7 @@ nav.fas{
         display: block;
         margin: 25px;
     }
-    nav ul.fas{
+    nav ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
@@ -425,16 +458,61 @@ nav.fas{
         margin-right: 20px;
 
     }
+}
+    /*
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    */
+    /* Styles for contact section on small devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Contact Section Layout */
+    #contact .container .row {
+      flex-direction: column; 
+    }
+    #contact .contact-left,
+    #contact .contact-right {
+      width: 100%; 
+    }
+  
+    /* Contact Info */
+    #contact .contact-left .social-icons {
+      margin-top: 1rem;
+    }
+    #contact .contact-left .social-icons a {
+      display: inline-block; 
+      margin: 0 0.5rem;
+    }
+  
+    /* Contact Form */
+    #contact .contact-right form {
+      margin-top: 1rem;
+    }
+    #contact .contact-right input[type="text"],
+    #contact .contact-right input[type="email"],
+    #contact .contact-right textarea {
+      width: 100%; 
+    }
+  }
+  
     .copyright{
         font-size:14px ;
+        
     }
+
 }
+@media (max-width: 768px) {
+    .copyright {
+      text-align: center; /* Center the copyright text on small screens */
+    }
+    .copyright p {
+      font-size: 0.8rem; /* Adjust font size for better readability */
+    }
 #msg{
     color:#61b752 ;
     margin-top: -40px;
     display: block;
 
 }
+
