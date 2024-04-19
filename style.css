@@ -117,6 +117,8 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    content: '';
+
 }
 .tab-titles{
     display: flex;
@@ -198,6 +200,7 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
 /*---------------portfolio-----------*/
 #portfolio{
     padding: 50px 0; 
@@ -289,6 +292,11 @@ nav ul li a:hover::after{
     height: 7rem;
 
 }
+.submitBtn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
 .btn:hover{
     background: #ff004f;
 }
@@ -326,6 +334,7 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background:#ff004f ;
+    cursor: pointer;
 }
 .contact-right form{
     width: 100%;  
