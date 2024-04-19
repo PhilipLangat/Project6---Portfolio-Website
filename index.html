@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website - Philip langat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/33899a340e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- <section>
+
+    </section>
+    <header> </head>
+        <main></main> -->
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" alt= "logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front -end developer/ Civil engineer</p>
+            <h1>Hello, I am <span>Philip</span> <br> Langat. A civil engineering student passionate about software development.</h1>
+        </div>
+    </div>
+  </div> 
+  <!--------------about------------------>
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="philipscreenshot.png" alt="Picture of philip">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title ">About me</h1>
+                <p>Philip Langat is an industrious civil engineering student who wants to incorporate software engineering skills in his career. He is majorly focussed on Front end development of web applications. He also holds a high knowledge of civil engineering skills and is ready to incorporate them in this modern era of artificial intelligence.He is very sharp in Javascript, React and Highway Geometric Design.</p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                     <p class = "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Designing web apps</li>
+                        <li><span>Pavement and Structural Design</span><br>Designing pavements and carrying out structural Design</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>December 2023 - Date</span><br>Hult Prize Campus Director at Dedan Kimathi University of Technology</li>
+                        <li><span>Jan 2024-May 2024</span><br>Civil Engineering Trainee at Wanjohi Mutonyi Consult Ltd</li>
+                        <li><span>November 2023-December 2023</span><br>Front-end developer intern at Oasis infobyte</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>October 2022 - Date</span><br>Bsc. Civil Engineering -Dedan Kimathi University of Technology</li>
+                        <li><span>Feb 2024- April 2024</span><br>Front-end developmentcourse - Janja Programmers</li>
+                        <li><span>May 2022-June 2023</span><br>Computer Application Packages- African Institute of Research and Development Studies Kericho</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  <!------------------services--------------->
+  <div id="services">
+    <div class="container">
+       <h1 class="sub-title"> My Services</h1> 
+       <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I offer user friendly web design for your personal and business needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <!-- <i class="fa-solid fa-home"></i>
+                 -->
+                 <i class="fa-solid fa-pen-nib"></i>
+                <h2>Structural Design</h2>
+                <p>I offer structural design services for Timber, Steel and reinforced concrete.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-road"></i>
+                <h2>Highway Geometric Design</h2>
+                <p>I carry out Highway Geometric design for all your needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+       </div>
+    </div>
+  </div>
+  <!------------------portfolio------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="webdesign.jpg" alt="images/work">
+                <div class="layer">
+                    <h3>Mariakiti Home Bookings</h3>
+                    <p>The website shows details about Mariakiti Home Bookings and allows the user to book a room. The user can also provide feedback and can also contact the management of Mariakiti Home Bookings(MHB). Check it out.</p>
+                    <a href="https://project5-mariakiti-home-bookings.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="structuraldesign.jpg" alt="images/work">
+                <div class="layer">
+                    <h3>DOM Manipulation</h3>
+                    <p>This is a simple Purrfect Cat facts projects to demonstrate my understanding of DOM manipulation in Javascript.</p>
+                    <a href="https://project8-dom-manipulation-purrfect-cat-facts.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <div class="work">
+                <img src="hgd.jpg" alt="images/work">
+                <div class="layer">
+                    <h3>Mariakiti Home Bookings</h3>
+                    <p>The website shows details about Mariakiti Home Bookings and allows the user to book a room. The user can also provide feedback and can also contact the management of Mariakiti Home Bookings(MHB). Check it out.</p>
+                    <a href="https://project5-mariakiti-home-bookings.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+            <!-- center this  btn -->
+            <button type="submit" class ="submitBtn"> See more</button>
+        </div>
+    </div>
+
+</div>
+ <!--------------------------contact------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+           <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-duotone fa-paper-plane"></i>langatp469@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+254702559131</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/langatp469/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/philipkiprutolangat469/"><i class="fa-brands fa-linkendin"></i></a>
+            </div>
+            <a href="Resume-Philip-Langat.pdf" download class="btn btn2">Download Cv</a>
+           </div>
+           <div class="contact-right">
+                <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+           </div> 
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Philip Langat<i class="fa-solid fa-heart"></i> </p>
+    </div>
+ </div>
+ <script>
+ var tablinks = document.getElementsByClassName("tab-links");
+var tablinks = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classlist.remove("active-link")
+    }
+    for(tablink of tabcontents){
+        tablink.classlist.remove("active-tab")
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");  
+}
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXFb3BPaQ-EQZBwk447nNaefPb-6DVu3ikOC3jBQFGgNJXJCxw7g0wyRmxIvoEuV9jmg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you for your message!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        }
+    )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
