@@ -406,7 +406,8 @@ nav .fas{
     display: none;
 
 }
-@media only screen and (max-width:600px){
+/*changed from 600px to 768px*/
+@media only screen and (max-width:768px){
     #header{
         background-image:url(....) ;   
     }
