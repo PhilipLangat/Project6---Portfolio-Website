@@ -530,7 +530,9 @@ nav .fas{
 }
 @media only screen and (max-width: 500px) {
     body {
-      background-color: lightblue;
+      /*background-color: lightblue;*/
+      background:#080808 ;
+      color: #fff ;
     }
     .row {
         display: flex;
