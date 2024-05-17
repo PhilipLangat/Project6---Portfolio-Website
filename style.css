@@ -243,6 +243,10 @@ nav ul li a:hover::after{
    display: block;
    transition: transform 0.5s;
 }
+
+.zindexed { 
+    z-index: 999 !important;
+}
 .layer{
     width: 100%;
     height: 100%;
@@ -497,7 +501,7 @@ nav .fas{
     #contact .contact-right textarea {
       width: 100%; 
     }
-  }
+  
   
     .copyright{
         font-size:14px ;
@@ -505,6 +509,7 @@ nav .fas{
     }
 
 }
+
 @media (max-width: 768px) {
     .copyright {
       text-align: center; /* Center the copyright text on small screens */
@@ -518,4 +523,32 @@ nav .fas{
     display: block;
 
 }
+
+}
+.no-display { 
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-icons{ 
+        width: 60% ; 
+        margin: auto
+    }
+    .networks{ 
+        width: 70% ; 
+        margin: auto
+    }
+    .no-display { 
+        display: contents;
+    }
+  }
+
+
+
 
